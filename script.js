@@ -3,6 +3,7 @@ const wrapper = document.querySelector('.wrapper');
 let divs = [];
 function clearGrid(size = 16) {
     let gridSize = size * size;
+    const wrapperWidth = 1000;
 
     divs.forEach(element => {
         wrapper.removeChild(wrapper.firstChild);
@@ -12,7 +13,11 @@ function clearGrid(size = 16) {
 
     for (let index = 0; index < gridSize; index++) {
         divs[index] = "div"+index;
-        wrapper.append(document.createElement('div'));
+        let width = wrapperWidth / size;
+        console.log(width);
+        let newDiv = document.createElement('div');
+        newDiv.setAttribute('style', "width: "+width+"px; height:"+width+"px;");
+        wrapper.append(newDiv);
     }
     
     let onHover = document.querySelectorAll('.wrapper div');

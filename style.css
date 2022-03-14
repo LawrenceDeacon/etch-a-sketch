@@ -8,15 +8,14 @@ body {
 .wrapper{
     display: flex;
     flex-wrap: wrap;
-    width: 800px;
+    width: 1000px;
     justify-content: center;
+    border: 1px solid black;
 }
 
 .wrapper div{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0;
-    width: 46px;
-    height: 46px;
 }
 
 .hovered{
