@@ -1,3 +1,12 @@
-div{
-    border: 0.5px solid red;
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1600px;
+}
+
+.wrapper div{
+    border: 1px solid red;
+    margin: 0;
+    width: 98px;
+    height: 98px;
 }
