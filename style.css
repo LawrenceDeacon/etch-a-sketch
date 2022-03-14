@@ -19,7 +19,7 @@ body {
     height: 46px;
 }
 
-.wrapper div:hover{
+.hovered{
     background-color: aqua;
 }
 
