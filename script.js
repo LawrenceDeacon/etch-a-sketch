@@ -15,6 +15,13 @@ function clearGrid(size = 16) {
         wrapper.append(document.createElement('div'));
     }
     
+    let onHover = document.querySelectorAll('.wrapper div');
+    onHover.forEach(element => {
+        element.addEventListener('mouseover',() => {
+            element.setAttribute('class', 'hovered');
+        });
+    });
+
     console.log(divs);
 }clearGrid();
 
@@ -33,8 +40,3 @@ const clear = document.querySelector('button').addEventListener('click', functio
     console.log(size);
     clearGrid(size);
 })
-
-const hover = document.querySelector('.wrapper div');
-hover.addEventListener('hover', function () {
-    hover.setAttribute('class', 'hovered');
-});
